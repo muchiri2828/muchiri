@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(wp2575467-animation-wallpaper-hd.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:black;
+    padding: 10px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+
+}
+.logo {
+    
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ff6347; 
+    text-transform: uppercase; 
+    font-family: 'Arial', sans-serif; 
+    background: linear-gradient(to right, red, orangered); 
+    -webkit-background-clip: text;
+    color: transparent; 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
+    margin: 10px 0; 
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  
+    
+}
+
+.menu ul li {
+    position: relative;
+}
+
+.menu ul li a {
+    color: black;
+    padding: 0px 15px;
+    display: block;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+}
+
+.menu ul li a:hover {
+    background-color:green;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content li {
+    border-bottom: 1px solid grey ;
+}
+
+.dropdown-content li a {
+    padding: 10px 15px;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding: 20px;
+}
+
+.content {
+    max-width: 800px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+button {
+    color: black;
+    padding: 0px 15px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 0;
+
+}
+.center-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .menu ul {
+        flex-direction: column;
+    }
+
+    .content {
+        width: 100%;
+        padding: 10px;
+    }
+}
